@@ -20,8 +20,9 @@ struct MQTTCommand: Decodable, Encodable {
 let HOST = ""  // AWS MQTT endpoint
 let AWS_ACCESS_KEY_ID = ""  // AWS access key
 let AWS_SECRET_KEY = ""  // AWS secret key
-let COMMAND_TOPIC = "foodr/device/a279ajksD/command"
-let RESPONSE_TOPIC = "foodr/device/a279ajksD/response"
+let DEVICE_ID = "a279ajksD"
+let COMMAND_TOPIC = "foodr/device/\(DEVICE_ID)/command"
+let RESPONSE_TOPIC = "foodr/device/\(DEVICE_ID)/response"
 let CLIENT_ID = "foodr-ios"
 
 

@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv() # take environment variables from .env.
 
 
-DEVICE_ID = os.getenv('DEVICE_ID')
+DEVICE_ID = os.getenv('DEVICE_ID', 'a279ajksD')
 CLIENT_ID = os.getenv('CLIENT_ID', 'foodr-python')
 ENDPOINT = os.getenv('ENDPOINT')
 CERT_FILE = os.getenv('CERT_FILE')

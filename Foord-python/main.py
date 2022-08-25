@@ -4,6 +4,10 @@ import os
 
 from awscrt.mqtt import QoS
 from awsiot import mqtt_connection_builder
+from dotenv import load_dotenv
+
+load_dotenv() # take environment variables from .env.
+
 
 DEVICE_ID = os.getenv('DEVICE_ID')
 CLIENT_ID = os.getenv('CLIENT_ID', 'foodr-python')

@@ -1,1 +1,2 @@
 awsiotsdk==1.11.5
+python-dotenv==0.20.0
